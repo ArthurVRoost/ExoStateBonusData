@@ -2,13 +2,9 @@ import { useState, useEffect } from "react";
 import './card.css'
 import data from '../../data/data.json';
 export default function Card() {
-    const [graphData, setGraphData] = useState([]);
+    const [graphData] = useState(data);
 
-    useEffect(() => {
-        setGraphData(data);
-        
-        
-    }, []);
+    
 
     const maxAmount = Math.max(...graphData.map(item => item.amount));
     return(
