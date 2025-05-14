@@ -1,0 +1,5 @@
+body{
+    background-color: hsl(27, 66%, 92%);
+    justify-content: center;
+    display: flex;
+}
